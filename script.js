@@ -40,7 +40,7 @@ function rot13(Str) {
 			output+=lookup[str[i]];
 		}
 		else{
-			output+=str[i];
+			output+=undefined;
 		}
 	}
   return output;
