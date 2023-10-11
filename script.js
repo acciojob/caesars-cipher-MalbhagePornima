@@ -32,15 +32,15 @@ const lookup = {
 };
 
 function rot13(Str) {
-     str=str.toUppercase();
+     Str=Str.toUppercase();
 	let output=" ";
 
-	for(let i=0;i<str.length;i++){
-		if(lookup[str[i]]){
-			output+=lookup[str[i]];
+	for(let i=0;i<Str.length;i++){
+		if(lookup[Str[i]]){
+			output+=lookup[Str[i]];
 		}
 		else{
-			output+=undefined;
+			output+=Str[i];
 		}
 	}
   return output;
